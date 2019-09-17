@@ -3,4 +3,8 @@
     <string name="password_txt">Password</string>
     <string name="email_txt">Email</string>
     <string name="signIn">Sign In</string>
+    <string name="enter_valid_email">Please enter valid email</string>
+    <string name="valid_email">Valide Email</string>
+    <string name="valid_password">Valide Password</string>
+    <string name="enter_valid_password">Password length must be greater or equal to 5 characters.</string>
 </resources>

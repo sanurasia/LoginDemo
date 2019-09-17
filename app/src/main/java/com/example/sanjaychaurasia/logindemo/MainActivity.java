@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         mEmailInput =  findViewById(R.id.textInputLayout);
         String email = mEmailInput.getEditText().getText().toString();
         if(emailValidator(email)){
-            Toast.makeText(this, "Valide Email", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.valid_email, Toast.LENGTH_SHORT).show();
 
         }else{
-            Toast.makeText(this, "Please enter valid email", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.enter_valid_email, Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -36,9 +36,10 @@ public class MainActivity extends AppCompatActivity {
         passwordInput = findViewById(R.id.passwordLayout);
         String password = passwordInput.getEditText().getText().toString();
         if(validatePassword(password)){
-            Toast.makeText(this, "Valide Password", Toast.LENGTH_SHORT).show();
+            //Alt + enter to save string constant
+            Toast.makeText(this, R.string.valid_password, Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(this, "Password length must be greater or equal to 5 characters.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.enter_valid_password, Toast.LENGTH_SHORT).show();
             return;
         }
 
